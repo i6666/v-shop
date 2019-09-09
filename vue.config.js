@@ -26,7 +26,8 @@ module.exports = {
         secure: false, // 设置支持https协议的代理
         pathRewrite: { '^/shop_api': '' }
       }
-    }
+    },
+      disableHostCheck: true
   },
   chainWebpack: (config) => {
     config.resolve.alias
